@@ -1,12 +1,12 @@
-<nav role="navigation">
+{# <nav role="navigation" class="grid--sm-two-thirds float--right clear text--right">
 	<ul>
 		{% for item in menu.get_items %}
-			<li class="nav-item {{item.classes | join(' ')}}">
+			<li class="nav-item {{item.classes | join(' ')}} display--inline spacing--horiz-1">
 				<a class="nav-link" href="{{item.get_link}}">{{item.title}}</a>
 				{% if item.get_children %}
 					<ul class="nav nav-drop">
 						{% for child in item.get_children %}
-							<li class="nav-drop-item">
+							<li class="nav-drop-item ">
 								<a class="nav-link" href="{{child.get_link}}">{{child.title}}</a>
 							</li>
 						{% endfor %}
@@ -15,4 +15,4 @@
 			</li>
 		{% endfor %}
 	</ul>
-	</nav><!-- #nav -->
+	</nav><!-- #nav --> #}

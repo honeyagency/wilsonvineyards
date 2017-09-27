@@ -1,3 +1,11 @@
-.bg--green{
-	background-color: $green;
+.bg--green {
+    background-color: $green;
+}
+
+.bg--gradient {
+    background: linear-gradient(180deg, #FFFFFE, #FFFFD9);
+}
+
+.bg--gray {
+    background-color: $gray;
 }

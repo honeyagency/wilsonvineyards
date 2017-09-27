@@ -167,6 +167,7 @@
         }
     }
 
+
     .grid--sm-three-fourths {
         flex-basis: calc(75% - .25em);
         width: calc(75% - .25em);
@@ -177,6 +178,15 @@
         }
     }
 
+    .grid--sm-three-fifths {
+        flex-basis: calc(100% / 1.6666 - .2em);
+        width: calc(100% / 1.6666 - .2em);
+
+        &.nog {
+            flex-basis: calc(100% /  1.6666);
+            width: calc(100% /  1.6666);
+        }
+    }
     .grid--sm-two-thirds {
         flex-basis: calc(100% / 1.5 - .3333333em);
         width: calc(100% / 1.5 - .3333333em);

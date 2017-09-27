@@ -52,7 +52,19 @@ module.exports = function(grunt) {
         //     options: {
         //         processors: [
         //             require('postcss-font-magician')({
-        //                 hosted: '../fonts/'
+        //                 custom: {
+        //                     'nevis': {
+        //                         variants: {
+        //                             normal: {
+        //                                 700: {
+        //                                     url: {
+        //                                         woff2: 'fonts/nevis.woff2',
+        //                                     }
+        //                                 },
+        //                             },
+        //                         }
+        //                     }
+        //                 }
         //             })
         //         ]
         //     },
@@ -164,6 +176,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-svgmin');
     grunt.loadNpmTasks('grunt-grunticon');
     grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.registerTask('style', ['sass', 'cssnano', 'postcss']);
     grunt.registerTask('default', ['watch', 'notify_hooks']);
     grunt.registerTask('icons', ['svgmin', 'grunticon', 'clean', 'copy']);
     grunt.registerTask('server', ['uglify', 'sass', 'cssnano', 'svgmin', 'grunticon', 'clean', 'copy']);

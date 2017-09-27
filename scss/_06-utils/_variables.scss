@@ -1,12 +1,12 @@
 $link-color: #337A46;
 
-$default-font: -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif !default;
+$default-font: "aktiv-grotesk", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif !default;
 
 $base-serif-font:$default-font;
 $base-sans-font:$default-font;
 $heading-font-family:$default-font;
 
-$heading-font-weight: 600;
+$heading-font-weight: 500;
 
 $max-width: (
 	xs: 480px,
@@ -23,6 +23,8 @@ $base-line-height: 1.6;
 
 $base-border-radius: 8px;
 $gr:1.610833;
+
+$max-wrap: 1200px;
 
 //
 // Media Queries & Breakpoints

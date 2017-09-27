@@ -1,0 +1,17 @@
+.aboutimg {
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.18);
+
+    &:first-of-type {
+        transform: rotate(-1deg);
+        z-index: 1;
+        position: relative;
+    }
+
+    &:last-of-type {
+        position: relative;
+        z-index: 1;
+        transform: rotate(1deg);
+    }
+}
