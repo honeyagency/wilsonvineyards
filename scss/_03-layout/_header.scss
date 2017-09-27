@@ -1,12 +1,17 @@
 .hdr-logo-link {
     i {
-        display: inline-block;
+
         width: 300px;
+        height: 35px;
+        display: block;
+        margin: 0 auto;
 
         svg {
             width: 100%;
-            path{
-            	// fill:white;
+
+            path {
+                // fill:white;
+           
             }
         }
     }
