@@ -108,3 +108,9 @@
         column-gap: 2em;
     }
 }
+
+.mobnorm {
+    @include media($max-sm) {
+        font-size: 1em;
+    }
+}
