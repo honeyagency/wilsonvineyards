@@ -1,11 +1,9 @@
-<section class="section--contact flex flex--wrap">
-	<div class="grid--sm-two-fifths" style="background-image: url('{{home.contact.image}}');background-size: cover;">
+<section class="section--contact dsk--flex flex--wrap bg--gray ">
+	<div class="grid--sm-two-fifths mobile-img" style="background-image: url('{{home.contact.image}}');background-size: cover;background-position:bottom;">
 	</div>
-	<div class="grid--sm-three-fifths spacing--gutter spacing--vert-2 spacing--dsk-vert-5">
-		<h3 class="">{{home.contact.title}}</h3>
-		<p class="grid--md-two-thirds">{{home.contact.text}}</p>
-		{% filter shortcodes %}
-			{{home.contact.form}}
-		{% endfilter %}
+	<div class="grid--sm-three-fifths  spacing--gutter spacing--vert-2 spacing--dsk-vert-3">
+		<h2 class="font--light  ">{{home.contact.title}}</h2>
+		<p class="">{{home.contact.text}}</p>
+	{{home.contact.form}}
 </div>
 </section>

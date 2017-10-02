@@ -1,0 +1,10 @@
+.button {
+    display: inline-block;
+    padding: 0.5em 1.7em;
+    margin: 0 .5em;
+    font-weight: 500;
+
+    @include media($max-sm) {
+        margin-bottom: 5px;
+    }
+}

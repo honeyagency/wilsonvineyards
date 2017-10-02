@@ -4,6 +4,7 @@ body {
     font-size: 1.2rem;
     color: $base-font-color;
     font-weight: 300;
+    -webkit-font-smoothing:antialiased;
 }
 
 %headings {
@@ -40,7 +41,7 @@ h1 {
 
 h2 {
     font-size: $h2;
-    letter-spacing: 1.7px;
+    letter-spacing: .2px;
 }
 
 h3 {
@@ -147,7 +148,7 @@ em {
 }
 
 strong, b {
-    font-weight: 600;
+    font-weight: 500;
 }
 
 ul {

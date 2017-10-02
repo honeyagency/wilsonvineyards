@@ -1,0 +1,96 @@
+$timing: 0.9s;
+$delay: 1s;
+$lightgray: #afb1b4;
+
+.icon-logo {
+    svg {
+        // width: 80vw;
+        display: block;
+        margin: 0 auto;
+        overflow: visible;
+    }
+
+    g {
+        path {}
+
+        &#part1 {
+            path {
+                stroke-dashoffset: 1500;
+                stroke-dasharray: 1495;
+                stroke: transparentize($lightgray, 0.2);
+                stroke-linecap: round;
+                animation-delay: .2s;
+                animation-duration: 1.5 * $timing;
+                animation-fill-mode: forwards;
+                animation-timing-function: $base-cubic;
+                fill: transparent;
+                animation-name: dash;
+            }
+        }
+
+        &#part2 {
+            path {
+                stroke-dashoffset: 3065;
+                stroke-dasharray: 1000;
+                stroke: transparentize($lightgray, 0.2);
+                animation-delay: .6s;
+                stroke-linecap: round;
+                animation-duration: 1.5 * $timing;
+                animation-fill-mode: forwards;
+                animation-timing-function: $base-cubic;
+                fill: transparent;
+                animation-name: dash2;
+            }
+        }
+
+        // &:nth-of-type(1) {
+        //     path {
+        //         animation-duration: 1.3 * $timing;
+        //     }
+        // }
+   
+    }
+}
+
+@keyframes dash {
+    from {
+        stroke-dashoffset: 1500;
+    }
+
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes dash2 {
+    from {
+        stroke-dashoffset: 3065;
+    }
+
+    to {
+        stroke-dashoffset: 2055;
+    }
+}
+
+@keyframes loading {
+    from {
+        transform: translateY(40px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.section--header {
+    .grid--lg-two-thirds {
+        transform: translateY(40px);
+        opacity: 0;
+        animation-duration: .5s;
+        animation-fill-mode: forwards;
+        animation-timing-function: $base-cubic;
+        animation-name: loading;
+    }
+}

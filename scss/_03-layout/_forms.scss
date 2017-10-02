@@ -31,12 +31,12 @@ textarea {
     color: $base-font-color;
     appearance: none;
     -webkit-appearance: none;
-    background-color: transparent;
-    border: 1px solid transparentize($base-font-color, 0.7);
+    background-color: white;
+    border: 1px solid transparent;
 
     // font-family: $san;
     // text-transform: uppercase;
-    
+
     box-shadow: none;
     box-sizing: border-box;
     transition: border-color .2s ease-in-out;
@@ -84,7 +84,6 @@ select {
     background-color: transparent;
     appearance: none;
     -webkit-appearance: none;
-    
 }
 
 textarea {
@@ -110,12 +109,25 @@ select {
 }
 
 [type="submit"] {
-    
     display: block;
     appearance: none;
     -webkit-appearance: none;
     border: none;
+    color: white;
+    font-size: 1em;
+    letter-spacing: 0;
+    background-color: $green;
+    border: 1px solid $green;
+    font-family: $default-font;
+    font-size: $base-font-size;
+    font-weight: 300;
+    padding: 0.6em 0.7em;
+    font-size: 1em;
+    border-radius: 2px;
 
+    &#mc-embedded-subscribe {
+        border-radius: 0px 2px 2px 0px;
+    }
 }
 
 .screenreaderonly {
@@ -123,7 +135,6 @@ select {
 }
 
 .wpcf7-submit {
-
     appearance: none;
     padding: 0;
     background-color: $green;
@@ -149,4 +160,18 @@ select {
     #{$all-text-inputs} {
         width: 100%;
     }
+}
+
+.mc-field-group {
+    float: left;
+    width: 60%;
+
+    #mce-EMAIL {
+        width: 100%;
+        border-radius: 2px 0px 0px 2px;
+    }
+}
+
+#mce-responses {
+    float: left;
 }
