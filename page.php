@@ -24,4 +24,8 @@
 $context = Timber::get_context();
 $post = new TimberPost();
 $context['post'] = $post;
+if (is_page('10')) {
+	$context['home'] = prepareHomepageFields();
+}
+$context['footer'] = prepareFooterFields();
 Timber::render( array( 'page-' . $post->post_name . '.twig', 'page.twig' ), $context );
