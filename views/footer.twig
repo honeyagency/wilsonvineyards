@@ -1,14 +1,16 @@
-<footer class="bg--green spacing--vert-1 spacing--gutter  color--white flex flex--wrap justify--between">
-
-	<div class="grid--sm-half spacing--vert-1"><br>
-		{{footer.contact_two}}
+<footer class="bg--green spacing--vert-1 spacing--gutter  color--white flex flex--wrap justify--start">
 	
+	<div class="grid--sm-fourth spacing--vert-1">
+		{{footer.contact_one}}
+	</div>
+	<div class="grid--sm-third spacing--vert-1"><br>
+		{{footer.contact_two}}
 	</div>
 	<div class="grid--one text--center">
 		<br>
-	{{footer.footer}}<br>
-</div>
+		{{footer.footer}}<br>
+	</div>
 	<div class="text--center grid--one  spacing--vert-1">
-	<span class="font--even-smaller">Copyright {{"now"|date('Y')}}</span>
-</div>
+		<span class="font--even-smaller">Copyright {{"now"|date('Y')}}</span>
+	</div>
 </footer>
