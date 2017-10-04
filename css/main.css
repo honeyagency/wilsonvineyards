@@ -175,6 +175,8 @@ nav ul {
 footer {
   position: relative;
   z-index: 99; }
+  footer a {
+    color: white !important; }
 
 fieldset {
   background-color: transparent;
