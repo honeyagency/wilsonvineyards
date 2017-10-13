@@ -674,6 +674,7 @@ select {
       flex-basis: 75%;
       width: 75%; }
   .grid--sm-three-fifths {
+    -ms-flex-negative: 1;
     flex-basis: calc(100% / 1.6666 - .2em);
     width: calc(100% / 1.6666 - .2em); }
     .grid--sm-three-fifths.nog {
