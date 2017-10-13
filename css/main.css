@@ -334,6 +334,18 @@ select {
   fill: transparent;
   animation-name: dash2; }
 
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .icon-logo g#part1 path {
+    animation: none !important;
+    stroke: #b0b1b4 !important;
+    stroke-width: 29px !important;
+    opacity: 0.3 !important; }
+  .icon-logo g#part2 path {
+    animation: none !important;
+    stroke: #b0b1b4 !important;
+    stroke-width: 29px !important;
+    opacity: 0.3 !important; } }
+
 @keyframes dash {
   from {
     stroke-dashoffset: 1500; }
