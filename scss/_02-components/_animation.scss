@@ -52,29 +52,7 @@ $lightgray: #afb1b4;
     }
 }
 
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-    .icon-logo {
-        g {
-            &#part1 {
-                path {
-                    animation: none !important;
-                    stroke: #b0b1b4 !important;
-                    stroke-width: 29px !important;
-                    opacity: 0.3 !important;
-                }
-            }
 
-            &#part2 {
-                path {
-                    animation: none !important;
-                    stroke: #b0b1b4 !important;
-                    stroke-width: 29px !important;
-                    opacity: 0.3 !important;
-                }
-            }
-        }
-    }
-}
 
 @keyframes dash {
     from {
@@ -116,5 +94,13 @@ $lightgray: #afb1b4;
         animation-fill-mode: forwards;
         animation-timing-function: $base-cubic;
         animation-name: loading;
+    }
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .cls-3 {
+        animation: none !important;
+        stroke: #b0b1b4 !important;
+        stroke-width: 29px !important;
+        opacity: 0.3 !important;
     }
 }

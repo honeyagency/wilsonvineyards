@@ -334,18 +334,6 @@ select {
   fill: transparent;
   animation-name: dash2; }
 
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  .icon-logo g#part1 path {
-    animation: none !important;
-    stroke: #b0b1b4 !important;
-    stroke-width: 29px !important;
-    opacity: 0.3 !important; }
-  .icon-logo g#part2 path {
-    animation: none !important;
-    stroke: #b0b1b4 !important;
-    stroke-width: 29px !important;
-    opacity: 0.3 !important; } }
-
 @keyframes dash {
   from {
     stroke-dashoffset: 1500; }
@@ -373,6 +361,13 @@ select {
   animation-fill-mode: forwards;
   animation-timing-function: cubic-bezier(0.4, 0.01, 0.165, 0.99);
   animation-name: loading; }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .cls-3 {
+    animation: none !important;
+    stroke: #b0b1b4 !important;
+    stroke-width: 29px !important;
+    opacity: 0.3 !important; } }
 
 .bg--green {
   background-color: #337A46; }
