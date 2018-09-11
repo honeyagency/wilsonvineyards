@@ -30,9 +30,9 @@
     "grunt-cssnano": "*",
     "grunt-grunticon": "*",
     "grunt-notify": "*",
-    "grunt-postcss": "^0.8.0",
+    "grunt-postcss": "*",
     "grunt-svgmin": "*",
-    "postcss-convert-values": "^2.3.4",
-    "postcss-font-magician": "^1.6.1"
+    "postcss-convert-values": "*",
+    "postcss-font-magician": "*"
   }
 }
